@@ -16,28 +16,28 @@ public class FactoryMethodTest {
 	public void createA3() {
 		CarFactory carFactory = new A3Factory();
 		Car car = carFactory.createCar();
-		assertEquals(car.getModel(), car.info());
+		assertEquals("A3", car.info());
 	}
 	
 	@Test
 	public void createAvalon() {
 		CarFactory carFactory = new AvalonFactory();
 		Car car = carFactory.createCar();
-		assertEquals(car.getModel(), car.info());
+		assertEquals("Avalon", car.info());
 	}
 	
 	@Test
 	public void createEdge() {
 		CarFactory carFactory = new EdgeFactory();
 		Car car = carFactory.createCar();
-		assertEquals(car.getModel(), car.info());
+		assertEquals("Edge", car.info());
 	}
 	
 	@Test
 	public void createSorento() {
 		CarFactory carFactory = new SorentoFactory();
 		Car car = carFactory.createCar();
-		assertEquals(car.getModel(), car.info());
+		assertEquals("Sorento", car.info());
 	}
 	
 }

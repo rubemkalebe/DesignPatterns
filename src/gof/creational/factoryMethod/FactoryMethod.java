@@ -12,22 +12,22 @@ public class FactoryMethod {
 	public static void main(String[] args ) {
 		CarFactory factory = new A3Factory();
 		Car car = factory.createCar();
-		car.info();
+		System.out.println(car.info());
 		System.out.println();
 
 		factory = new AvalonFactory();
 		car = factory.createCar();
-		car.info();
+		System.out.println(car.info());
 		System.out.println();
 
 		factory = new EdgeFactory();
 		car = factory.createCar();
-		car.info();
+		System.out.println(car.info());
 		System.out.println();
 
 		factory = new SorentoFactory();
 		car = factory.createCar();
-		car.info();
+		System.out.println(car.info());
 		System.out.println();
 	}
 	

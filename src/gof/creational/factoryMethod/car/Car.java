@@ -13,7 +13,6 @@ public abstract class Car {
 	}
 
 	public String info() {
-		System.out.println(this.getModel());
 		return this.getModel();
 	}
 	
