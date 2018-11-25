@@ -10,22 +10,22 @@ import gof.creational.factoryMethod.factory.SorentoFactory;
 public class FactoryMethod {
 
 	public static void main(String[] args ) {
-		CarFactory factory = new A3Factory();
+		CarFactory factory = A3Factory.getInstance();
 		Car car = factory.createCar();
 		System.out.println(car.info());
 		System.out.println();
 
-		factory = new AvalonFactory();
+		factory = AvalonFactory.getInstance();
 		car = factory.createCar();
 		System.out.println(car.info());
 		System.out.println();
 
-		factory = new EdgeFactory();
+		factory = EdgeFactory.getInstance();
 		car = factory.createCar();
 		System.out.println(car.info());
 		System.out.println();
 
-		factory = new SorentoFactory();
+		factory = SorentoFactory.getInstance();
 		car = factory.createCar();
 		System.out.println(car.info());
 		System.out.println();
