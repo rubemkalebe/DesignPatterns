@@ -1,2 +1,2 @@
-# DesignPatters
-Implementing design patters in Java for practicing
+# Design Patterns
+Implementing design patterns in Java for practicing
